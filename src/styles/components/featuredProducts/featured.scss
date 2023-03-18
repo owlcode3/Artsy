@@ -1,0 +1,17 @@
+.featured {
+  @extend %center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.featured__container {
+  // background-color: gold;
+  // width: 80%;
+}
+
+.featured__heading {
+  font-weight: 500;
+  font-size: toRem(48);
+  line-height: toRem(65);
+  margin-bottom: 2rem;
+}

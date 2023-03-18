@@ -1,0 +1,46 @@
+.hero__carousel {
+  @extend %center;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+
+.hero__carousel-lists {
+  position: relative;
+  list-style: none;
+  height: 33rem;
+  width: toRem(430);
+  overflow: hidden;
+}
+
+.hero__carousel-list {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: toRem(430);
+  height: toRem(500);
+  transition: all 1s $ease-out-expo;
+}
+
+.hero__carousel-list--1 {
+  top: 1rem;
+}
+
+.hero__carousel-list--2 {
+  top: 1rem;
+}
+
+.hero__carousel-list--3 {
+  top: -2rem;
+}
+
+.hero__carousel-list--4 {
+  bottom: -1.5rem;
+}
+
+.hero__carousel-list--5 {
+  bottom: -1.5rem;
+}
+
+.hero__carousel-img {
+  width: toRem(394);
+}

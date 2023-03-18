@@ -1,0 +1,20 @@
+$color-white: #f9f1e7;
+$color-black: #292929;
+$background: $color-white;
+$color-quicksand: #333333;
+$color-cadet-blue: #b2b8c3;
+$color-bright-grey: #37384c;
+$stix-two-text: "STIX Two Text", serif;
+$rubik: "Rubik", sans-serif;
+$bellefair: "Bellefair", serif;
+$clash-display: "Clash Display", sans-serif;
+$satoshi: "Satoshi", sans-serif;
+$lb: "Libre Baskerville", serif;
+
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-out-expo: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+$border-line: 0.1px solid $color-black;
+$border-line-tertiary: 0.3px solid $color-black;
+
+$z-indexes: ("preloader", "navigation", "content", "canvas");

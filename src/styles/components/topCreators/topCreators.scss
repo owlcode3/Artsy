@@ -1,0 +1,109 @@
+.creators {
+  position: relative;
+  font-family: $clash-display;
+  background: #e2e2e2;
+  width: 100%;
+  height: toRem(922);
+  padding: 5rem 0;
+}
+
+.creators__inner {
+}
+
+.creators__container {
+  @extend %center;
+  justify-content: space-between;
+  // background-color: rebeccapurple;
+  height: 20rem;
+  padding: 0 15rem;
+}
+
+.creators__paragraph {
+  font-size: toRem(32);
+  font-weight: 200;
+  line-height: toRem(42);
+  height: toRem(252);
+  width: toRem(1148);
+  margin: 0 auto;
+}
+
+.creators__heading {
+  align-self: start;
+  width: toRem(535);
+  height: toRem172;
+  font-weight: 600;
+  font-size: toRem(55);
+  line-height: 155.5%;
+}
+
+.creators__editorials {
+  @extend %center;
+  gap: 2rem;
+  height: 17rem;
+}
+
+.creators__bar {
+  @extend %line__bar;
+  height: toRem(270);
+  width: toRem(10);
+  &::after {
+    background-color: $color-black;
+    height: calc(toRem(295.69) / 4);
+    width: toRem(10);
+    bottom: 0;
+  }
+}
+
+.creators__lists {
+  list-style: none;
+  @extend %center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.creators__list {
+  font-size: toRem(40);
+  font-weight: 400;
+  line-height: toRem(62);
+  width: toRem(175);
+  height: toRem(62);
+}
+
+.creators__circa {
+  position: absolute;
+  @extend %center;
+  flex-direction: column;
+  right: 6rem;
+  bottom: 0;
+  width: 28rem;
+  height: 20rem;
+}
+
+.creators__text-1 {
+  height: toRem(75);
+  width: toRem(160);
+  font-size: toRem(48);
+  font-weight: 700;
+  line-height: toRem(74.64);
+  text-transform: uppercase;
+}
+
+.creators__text-2 {
+  position: relative;
+  height: toRem(264);
+  width: toRem(433);
+  font-size: toRem(170);
+  font-weight: 700;
+  line-height: toRem(264);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8.4rem;
+    width: calc(toRem(433-10));
+    height: toRem(10);
+    background: $color-black;
+  }
+}

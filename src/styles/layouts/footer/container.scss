@@ -1,0 +1,47 @@
+.container {
+  @extend %center;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.container__inner-1 {
+  @extend %center;
+  width: 80%;
+  height: toRem(400);
+  justify-content: space-around;
+}
+
+.container__logo {
+  font-family: $stix-two-text;
+  font-size: toRem(48);
+  line-height: toRem(59.04);
+}
+
+.container__lists {
+  @extend %center;
+  list-style: none;
+  flex-direction: column;
+  gap: 3rem 0;
+  align-items: flex-start;
+}
+
+.container__list {
+  @extend %center;
+  @extend %link__font;
+  gap: 2rem;
+  font-size: toRem(26);
+  line-height: toRem(35.1);
+}
+
+.container__icon {
+  display: block;
+}
+
+.container__inner-2 {
+  font-family: $rubik;
+  font-size: toRem(24);
+  list-style: toRem(21);
+  color: $color-quicksand;
+  letter-spacing: -2%;
+  opacity: 0.5;
+}

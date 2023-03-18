@@ -1,0 +1,125 @@
+.featured__boolean {
+  position: relative;
+  width: toRem(1240.06);
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.featured__boolean::after {
+  content: "";
+  width: 100%;
+  height: 0.1px;
+  position: absolute;
+  top: 0;
+  background-color: $color-quicksand;
+  display: block;
+  border: 0.5px solid $color-quicksand;
+  opacity: 0.4;
+}
+
+.featured__boolean-inner {
+  @extend %center;
+  justify-content: space-between;
+  width: 97%;
+}
+
+.featured__img-box {
+  position: relative;
+  height: toRem(305);
+  width: toRem(610);
+}
+
+.featured__img-box:hover .featured__reveal {
+  opacity: 1;
+}
+
+.featured__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.featured__reveal {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+  @extend %center;
+  gap: 0 2rem;
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.featured__link {
+  @extend %center;
+  gap: 1rem;
+  color: $color-white;
+}
+
+.featured__text-box {
+  height: toRem(305);
+  @extend %center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.featured__heading-2 {
+  width: toRem(411);
+  height: toRem(50);
+  font-family: $stix-two-text;
+  font-weight: 700;
+  font-size: toRem(40);
+  line-height: toRem(50);
+}
+
+.featured__paragraph {
+  width: toRem(540);
+  height: toRem(128);
+  font-weight: 400;
+  font-size: toRem(24);
+  line-height: toRem(32);
+}
+
+.featured__creators {
+  @extend %center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.featured__creator-img {
+  margin-left: -1.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.featured__creator-img:first-child {
+  margin-left: 0;
+}
+
+.featured__major {
+  @extend %description-3;
+}
+
+.featured__arrow-box {
+  @extend %center;
+  width: toRem(78);
+  height: toRem(78);
+  border-radius: 50%;
+  border: 0.5px solid $color-quicksand;
+}
+
+.featured__arrow-box--grey {
+  @extend %center;
+  width: toRem(70);
+  height: toRem(70);
+  border-radius: 50%;
+  border: 0.5px solid $color-white;
+}
+
+.featured__arrow {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+}

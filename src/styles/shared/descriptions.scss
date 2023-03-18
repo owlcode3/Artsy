@@ -1,0 +1,22 @@
+%description-1 {
+  font-family: $clash-display;
+  font-weight: 600;
+  font-size: toRem(80);
+  line-height: 156.7%;
+  text-align: center;
+}
+
+%description-2 {
+  font-family: $satoshi;
+  font-weight: 500;
+  font-size: toRem(28);
+  line-height: 156.7%;
+  text-align: center;
+}
+
+%description-3 {
+  font-family: $satoshi;
+  font-weight: 500;
+  font-size: toRem(24);
+  line-height: toRem(32);
+}

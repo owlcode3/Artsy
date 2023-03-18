@@ -1,0 +1,42 @@
+.explore {
+  height: 44rem;
+  width: 100%;
+}
+
+.explore__inner {
+  @extend %center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.explore__container {
+  @extend %center;
+  justify-content: space-between;
+  padding: 0 10rem;
+  width: 100%;
+  height: toRem(188);
+  border-bottom: 0.1px solid $color-quicksand;
+}
+
+.explore__container:not(:last-child) {
+  border-top: 0.1px solid $color-quicksand;
+}
+
+.explore__text {
+  width: toRem(442);
+  height: toRem(65);
+  font-weight: 500;
+  font-size: toRem(48);
+  line-height: toRem(65);
+}
+
+.explore__link {
+  cursor: pointer;
+}
+
+.explore__icon {
+  display: block;
+  width: toRem(80);
+  height: toRem(70);
+}

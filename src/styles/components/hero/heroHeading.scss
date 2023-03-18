@@ -1,0 +1,19 @@
+.hero__heading-container {
+  width: toRem(1080);
+  height: toRem(250);
+  margin: 0 auto;
+}
+
+.hero__heading-container:not(:first-child) {
+  width: toRem(926);
+  height: toRem(88);
+  margin-top: 2rem;
+}
+
+.hero__heading-paragraph-1 {
+  @extend %description-1;
+}
+
+.hero__heading-paragraph-2 {
+  @extend %description-2;
+}

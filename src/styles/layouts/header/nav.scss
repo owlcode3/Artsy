@@ -1,0 +1,41 @@
+.nav {
+  @extend %center;
+  justify-content: space-around;
+  height: toRem(145);
+}
+
+.nav__logo {
+  font-family: $stix-two-text;
+  font-size: toRem(32);
+  line-height: toRem(19);
+}
+
+.nav__lists {
+  @extend %center;
+  justify-content: space-around;
+  list-style: none;
+  width: 10%;
+}
+
+.nav__lists:not(:last-child) {
+  @extend %center;
+  justify-content: space-between;
+  width: toRem(485);
+}
+
+.nav__list {
+  position: relative;
+  @extend %line__animate;
+}
+
+.nav__list:hover .nav__link {
+  font-weight: 500;
+}
+
+.nav__link {
+  @extend %link__font;
+}
+
+.nav__icon {
+  display: block;
+}
